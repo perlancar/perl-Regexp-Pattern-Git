@@ -75,6 +75,7 @@ _
 
                          # 6. (b) cannot end with a slash
                          (?<!/)
+
                          # 7. cannot end with a dot
                          (?<!\.)
                      )\z
