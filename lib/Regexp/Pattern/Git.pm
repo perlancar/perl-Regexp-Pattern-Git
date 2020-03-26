@@ -30,7 +30,7 @@ manpage, reproduced below:
 
 7. They cannot end with a dot ..
 
-8. They cannot contain a sequence @{.
+8. They cannot contain a sequence: @ followed by {.
 
 9. They cannot be the single character @.
 
@@ -63,7 +63,7 @@ _
                          (?!/)
                          (?![^/]*//)
 
-                         # 8. cannot contain the sequence "@{"
+                         # 8. cannot contain the sequence: @ followed by {
                          (?![^@]*@\{)
 
                          # 9. cannot be single character @, implied by rule #2
@@ -137,5 +137,3 @@ _
 
 1;
 # ABSTRACT: Regexp patterns related to git
-
-=head1 SEE ALSO
